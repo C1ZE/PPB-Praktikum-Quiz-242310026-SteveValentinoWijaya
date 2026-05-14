@@ -1,0 +1,1 @@
+export { default } from "@/components/module-latihan/latihan_1/index";  
