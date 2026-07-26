@@ -1,18 +1,13 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Text, TouchableOpacity, View } from "react-native";
-import { useAuth } from "../../../../context/AuthContext";
 import { styles } from "../styles/StyleApps";
 
-// BAB 8.3 - Langkah 4: tampilkan username jika userData memiliki nilai,
-// jika kosong (belum login) tetap tampilkan "Discover Books"
 const Header = () => {
-  const { userData } = useAuth();
-
   return (
     <View style={styles.h_container}>
       <View>
         <Text style={styles.sub_title}>Good Morning👋</Text>
-        <Text style={styles.title}>{userData?.username || "Discover Books"}</Text>
+        <Text style={styles.title}>Discover Books</Text>
       </View>
       <View style={{ flexDirection: "row", gap: 10 }}>
         <TouchableOpacity style={[styles.btn_icon, styles.shadow]}>

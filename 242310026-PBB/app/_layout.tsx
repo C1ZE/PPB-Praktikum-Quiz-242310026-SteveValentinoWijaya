@@ -3,6 +3,8 @@ import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/use-color-scheme';
+// BAB 8: AuthProvider menyediakan session login (SecureStore) ke seluruh aplikasi
+import { AuthProvider } from '../context/AuthContext';
 
 // export const unstable_settings = {
 //   anchor: '(tabs)',
@@ -20,9 +22,9 @@ export default function RootLayout() {
     //   <StatusBar style="auto" />
     // </ThemeProvider>
 
-    <>
+    <AuthProvider>
       <StatusBar style="auto"/>
       <Stack screenOptions={{ headerShown: false }}/>
-    </>
+    </AuthProvider>
   );
 }
