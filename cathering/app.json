@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Cathering",
+    "slug": "cathering",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#FF6B35"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cathering.app"
+    },
+    "android": {
+      "package": "com.cathering.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#FF6B35"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
